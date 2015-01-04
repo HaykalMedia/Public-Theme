@@ -1,0 +1,1 @@
+jQuery(document).ready(function(o){void 0!==o.fn.headroom&&o(".share-bar").length&&(o(".share-bar").headroom({tolerance:5,offset:580,classes:{initial:"animated",pinned:"slideUp",unpinned:"slideDown",top:"headroom--top",notTop:"headroom--not-top"}}),setTimeout(function(){o(".share-bar").css("top",0)},300))});

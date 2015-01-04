@@ -1,0 +1,82 @@
+.card {
+    background: #fff;
+    box-shadow: 1px 1px 3px 0 $md-grey-400;
+    margin-bottom: 15px;
+    border-radius : 3px;
+    padding: 0 25px 15px;
+    overflow: hidden;
+    header {
+        background: $md-grey-200;
+        border-bottom: 1px solid $md-grey-300;
+        margin: 0 -45px 10px;
+        padding: 10px 45px;
+    }
+    footer {
+        .label {
+            margin-left: 5px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.article {
+    header {
+        h1 {
+            display: inline-block;
+            @media #{$medium-up} {
+                line-height: 65px;
+            }
+            margin: 0;
+            font-size: 24px;
+            a {
+                color: $body-color;
+            }
+        }
+        .share {
+            @media #{$medium-up} {
+                line-height: 65px;
+            }
+            a {
+                color: $md-light-green-900;
+            }
+        }
+    }
+    .date {
+        color: $md-grey-600;
+        font-size: small;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $md-grey-200;
+        margin-bottom: 10px;
+    }
+    p {
+        line-height: 2em;
+    }
+}
+
+.thumbnail {
+    border: 1px solid $thumbnail-border-color;
+    padding: 5px;
+    // margin: auto;
+    // margin-right: 10px;
+}
+
+.read-more {
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+.article-footer {
+    background: $md-grey-200;
+    box-shadow: 1px 1px 3px 0 #bdbdbd;
+    padding: 5px 25px 5px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom-left-radius : 3px;
+    border-bottom-right-radius : 3px;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}
+
+
+

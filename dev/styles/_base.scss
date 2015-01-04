@@ -1,0 +1,11 @@
+@media #{$large-up} {
+    header.container {
+      height: 40%;
+  }
+
+  .main-content {
+      position: relative;
+      top: -30%;
+      z-index: 1;
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "haykalmedia/public-theme",
+    "description": "WordPress general purpose theme.",
+    "keywords": ["wordpress", "theme", "general-purpose"],
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ammar Alakkad",
+            "email": "am.alakkad@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Theme\\": "src/"
+        },
+        "files": [
+            "wp-content/themes/theme/src/helpers.php"
+        ]
+    },
+
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

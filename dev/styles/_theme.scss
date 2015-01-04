@@ -1,0 +1,117 @@
+header.container {
+    background: $md-light-green-600;
+    color: $md-grey-100;
+}
+
+.top-bar {
+    .title-area {
+        @media #{$small-only} {
+            width: 100%;
+        }
+    }
+    .toggle-topbar {
+        left: 0;
+    }
+    .main-menu {
+        @media #{$large-up} {
+            overflow: hidden;
+            max-width: 70%;
+        }
+        @media #{$medium-only} {
+            max-width: 54%;
+        }
+    }
+    .social-buttons {
+        max-height: $topbar-height;
+        overflow: hidden;
+        a{
+            max-height: $topbar-height !important;
+        }
+    }
+    .search-box {
+        top: 43px !important;
+        margin-left: 358px !important;
+    }
+    .search-box:before , .search-box:after {
+        content: none !important;
+    }
+    .search-button {
+        background-color: $topbar-bg !important;
+        height: auto;
+    }
+    .search-button-container :hover {
+        background-color: $topbar-bg-hover !important;
+    }
+}
+
+h1.page-title {
+    margin: -25px 0 35px;
+}
+
+.social-buttons {
+    a {
+        padding: 5px 10px !important;
+    }
+}
+
+span.label {
+    font-size: 0.8em;
+    padding-bottom: 6px;
+}
+
+.site-footer {
+    font-size: 0.9em;
+    text-align: left;
+}
+
+
+.top-bar input[type="text"], .top-bar .button {
+    font-size: 0.77778rem;
+    position: relative;
+    top: 7px;
+}
+
+.top-bar input[type="text"] {
+    height: auto;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    font-size: 0.75rem;
+}
+
+.sidebar
+{
+    .card {
+        padding: 15px;
+        // padding-top: 0;
+        header {
+            margin: -15px -15px 15px;
+            padding: 10px 15px;
+            h1 {
+                font-size: 1.6em;
+                margin: 0;
+            }
+        }
+    }
+
+    .post {
+        margin-bottom: 15px;
+        .post-title {
+            padding-right: 0;
+        }
+    }
+}
+
+.comment-form .form-submit input[type="submit"] {
+    @extend .button;
+    @extend .button-primary;
+}
+.comment-card {
+    padding: 0px 0px 10px 0px !important;
+}
+.comment-header {
+    padding-right: 30px !important;
+    padding-top: 5px !important;
+}
+.comment-text {
+    padding-right: 30px;
+}
