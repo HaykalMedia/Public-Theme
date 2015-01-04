@@ -15,7 +15,7 @@
             "Theme\\": "src/"
         },
         "files": [
-            "wp-content/themes/theme/src/helpers.php"
+            "src/helpers.php"
         ]
     },
 
