@@ -46,7 +46,8 @@ class Social
                     <td><input type="text" name="twitter" value="@<?= $this->twitter ?>" /></td>
                 </tr>
                 <tr>
-                    <td><input type="submit" name="submit" value="submit" /></td>
+                    <th></th>
+                    <td><input type="submit" name="submit" value="Submit" class="button button-primary" /></td>
                 </tr>
             </table>
         </form>
