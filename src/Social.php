@@ -75,9 +75,8 @@ class Social
         }
         if (isset($_POST['twitter'])) {
             // save twitter account without @ character
-            $twitter = str_replace("@", "", $_POST['twitter']);
-            update_option('twitter_account', $twitter);
-            $this->twitter = $_POST['twitter'];
+            $this->twitter = str_replace("@", "", $_POST['twitter']);
+            update_option('twitter_account', $this->twitter);
         }
     }
 
