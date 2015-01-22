@@ -32,9 +32,6 @@ class Social
         if (isset($_POST) and count($_POST)) {
             $this->save_accounts();
         }
-
-        // get accounts
-        $this->get_accounts();
         ?>
         <h2>Social Accounts</h2>
 
