@@ -48,8 +48,15 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#"><i class="fa fa-2x fa-fw fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-2x fa-fw fa-twitter"></i></a></li>
+                        <?php
+                        $facebook = get_option('facebook_account');
+                        $twitter  = get_option('twitter_account');
+                        if($facebook): ?>
+                            <li><a href="https://facebook.com/<?= $facebook; ?>" target="_blank"><i class="fa fa-2x fa-fw fa-facebook"></i></a></li>
+                        <?php endif;?>
+                        <?php if($twitter): ?>
+                            <li><a href="https://twitter.com/<?= $twitter; ?>" target="_blank"><i class="fa fa-2x fa-fw fa-twitter"></i></a></li>
+                        <?php endif; ?>
                     </ul>
                 </section>
             </nav>
